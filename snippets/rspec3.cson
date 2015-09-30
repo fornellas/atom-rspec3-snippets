@@ -166,10 +166,16 @@
   ##
   ## RSpec Expectations
   ##
-  
+
   'expect().to':
     'prefix': 'ex'
-    'body': 'expect(${1}).to ${2}'
+    'body': 'expect(${1:subject}).to ${2}'
   'expect().not_to':
     'prefix': 'exn'
-    'body': 'expect(${1}).not_to ${2}'
+    'body': 'expect(${1:subject}).not_to ${2}'
+  'expect do end.to':
+    'prefix': 'exb'
+    'body': 'expect do\n  ${1:subject}\nend.to ${2}'
+  'expect do end.not_to':
+    'prefix': 'exnb'
+    'body': 'expect do\n  ${1:subject}\nend.not_to ${2}'
