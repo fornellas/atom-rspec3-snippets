@@ -162,3 +162,14 @@
   'described_class':
     'prefix': 'dc'
     'body': 'described_class'
+
+  ##
+  ## RSpec Expectations
+  ##
+  
+  'expect().to':
+    'prefix': 'ex'
+    'body': 'expect(${1}).to ${2}'
+  'expect().not_to':
+    'prefix': 'exn'
+    'body': 'expect(${1}).not_to ${2}'
