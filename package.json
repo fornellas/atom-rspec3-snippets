@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "description": "RSpec 3 snippets",
+  "owner": "fornellas",
   "repository": "https://github.com/fornellas/atom-rspec3-snippets/",
   "license": "GPL",
   "engines": {
