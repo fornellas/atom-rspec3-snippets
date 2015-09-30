@@ -1,11 +1,11 @@
 {
-  "name": "atom-rspec3-snippets",
-  "version": "0.0.3",
+  "name": "rspec3-snippets",
+  "main": "./lib/rspec3-snippets",
+  "version": "0.0.5",
   "description": "RSpec 3 snippets",
-  "owner": "fornellas",
   "repository": "https://github.com/fornellas/atom-rspec3-snippets/",
   "license": "GPL",
   "engines": {
     "atom": ">1.0.19"
-  }
+  },
 }
