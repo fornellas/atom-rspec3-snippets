@@ -1,6 +1,6 @@
 {
-  "name": "rspec3-snippets",
-  "version": "0.0.2",
+  "name": "atom-rspec3-snippets",
+  "version": "0.0.3",
   "description": "RSpec 3 snippets",
   "owner": "fornellas",
   "repository": "https://github.com/fornellas/atom-rspec3-snippets/",
