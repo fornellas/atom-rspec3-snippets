@@ -1,17 +1,11 @@
 {
   "name": "rspec3-snippets",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.0.1",
   "description": "RSpec 3 snippets",
   "owner": "fornellas",
   "repository": "https://github.com/fornellas/atom-rspec3-snippets/",
   "license": "GPL",
   "engines": {
-    "atom": "*",
-    "node": "*"
-  },
-  "dependencies": {},
-  "bugs": {
-    "url": "https://github.com/fornellas/atom-rspec3-snippets/issues"
+    "atom": ">1.0.19"
   }
 }
