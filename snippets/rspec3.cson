@@ -1,0 +1,164 @@
+'.source.ruby':
+  ##
+  ## RSpec Core
+  ##
+
+  # example_group
+  'RSpec.example_group Type':
+    'prefix': 'eg'
+    'body': '${1:RSpec.}example_group $2 do\n  $3\nend'
+  'RSpec.example_group \'string\'':
+    'prefix': 'egs'
+    'body': '${1:RSpec.}example_group \'$2\' do\n  $3\nend'
+  'RSpec.example_group Type, \'string\'':
+    'prefix': 'egts'
+    'body': '${1:RSpec.}example_group $2, \'$3\' do\n  $4\nend'
+  # describe
+  'RSpec.describe Type':
+    'prefix': 'desc'
+    'body': '${1:RSpec.}describe $2 do\n  $3\nend'
+  'RSpec.describe \'string\'':
+    'prefix': 'descs'
+    'body': '${1:RSpec.}describe \'$2\' do\n  $3\nend'
+  'RSpec.describe Type, \'string\'':
+    'prefix': 'descts'
+    'body': '${1:RSpec.}describe $2, \'$3\' do\n  $4\nend'
+  # context
+  'RSpec.context Type':
+    'prefix': 'con'
+    'body': '${1:RSpec.}context $2 do\n  $3\nend'
+  'RSpec.context \'string\'':
+    'prefix': 'conts'
+    'body': '${1:RSpec.}context \'$2\' do\n  $3\nend'
+  'RSpec.context Type, \'string\'':
+    'prefix': 'contts'
+    'body': '${1:RSpec.}context $2, \'$3\' do\n  $4\nend'
+  # xdescribe
+  'RSpec.xdescribe Type':
+    'prefix': 'xdes'
+    'body': '${1:RSpec.}xdescribe $2 do\n  $3\nend'
+  'RSpec.xdescribe \'string\'':
+    'prefix': 'xdess'
+    'body': '${1:RSpec.}xdescribe \'$2\' do\n  $3\nend'
+  'RSpec.xdescribe Type, \'string\'':
+    'prefix': 'xdests'
+    'body': '${1:RSpec.}xdescribe $2, \'$3\' do\n  $4\nend'
+  # xcontext
+  'RSpec.xcontext Type':
+    'prefix': 'xcon'
+    'body': '${1:RSpec.}xcontext $2 do\n  $3\nend'
+  'RSpec.xcontext \'string\'':
+    'prefix': 'xcons'
+    'body': '${1:RSpec.}xcontext \'$2\' do\n  $3\nend'
+  'RSpec.xcontext Type, \'string\'':
+    'prefix': 'xconts'
+    'body': '${1:RSpec.}xcontext $2, \'$3\' do\n  $4\nend'
+  # fdescribe
+  'RSpec.fdescribe Type':
+    'prefix': 'fdes'
+    'body': '${1:RSpec.}fdescribe $2 do\n  $3\nend'
+  'RSpec.fdescribe \'string\'':
+    'prefix': 'fdess'
+    'body': '${1:RSpec.}fdescribe \'$2\' do\n  $3\nend'
+  'RSpec.fdescribe Type, \'string\'':
+    'prefix': 'fdests'
+    'body': '${1:RSpec.}fdescribe $2, \'$3\' do\n  $4\nend'
+  # fcontext
+  'RSpec.fcontext Type':
+    'prefix': 'fcon'
+    'body': '${1:RSpec.}fcontext $2 do\n  $3\nend'
+  'RSpec.fcontext \'string\'':
+    'prefix': 'fcons'
+    'body': '${1:RSpec.}fcontext \'$2\' do\n  $3\nend'
+  'RSpec.fcontext Type, \'string\'':
+    'prefix': 'fconts'
+    'body': '${1:RSpec.}fcontext $2, \'$3\' do\n  $4\nend'
+  # it
+  'it \'does something\'':
+    'prefix': 'it'
+    'body': 'it \'${1:does something}\'${2: do\n  $3\nend}'
+  # Shared examples
+  'include_examples \'name\' # current context':
+    'prefix': 'ince'
+    'body': 'include_examples \'$1\'${2:, ${3:parameters}}'
+  'it_behaves_like \'name\' # nested context':
+    'prefix': 'ibl'
+    'body': 'it_behaves_like \'$1\'${2:, ${3:parameters}}'
+  'it_should_behave_like \'name\' # nested context':
+    'prefix': 'isbl'
+    'body': 'it_should_behave_like \'$1\'${2:, ${3:parameters}}'
+  'matching :metadata # current context':
+    'prefix': 'mame'
+    'body': 'matching :$1'
+  # Shared context
+  'shared_context \'name\'':
+    'prefix': 'sc'
+    'body': '${1:RSpec.}shared_context \'${2:name}\'${3:, key: value} do\n  $4\nend'
+  'include_context \'name\'':
+    'prefix': 'incc'
+    'body': 'include_context \'$1\'${2: do\n  ${3:# extend context}\nend}'
+  # Hooks
+  'before(:suite|:context|:example)':
+    'prefix': 'bef'
+    'body': 'before(:${1:suite|context|example}) do\n  $2\nend'
+  'after(:example|:context|:suite)':
+    'prefix': 'aft'
+    'body': 'after(:${1:example|context|suite}) do\n  $2\nend'
+  'around(:example)':
+    'prefix': 'aro'
+    'body': 'around(:${1:example}) do |${2:example}|\n  $3\nend'
+  # Subject
+  'subject { }':
+    'prefix': 'sub'
+    'body': 'subject { $1 }'
+  'subject do end':
+    'prefix': 'subb'
+    'body': 'subject do\n  $1\nend'
+  'subject! { }':
+    'prefix': 'sub!'
+    'body': 'subject! { $1 }'
+  'subject! do end':
+    'prefix': 'subb!'
+    'body': 'subject! do\n  $1\nend'
+  'subject(:name) { }':
+    'prefix': 'subn'
+    'body': 'subject(:${1:name}) { $2 }'
+  'subject(:name) do end':
+    'prefix': 'subnb'
+    'body': 'subject(:${1:name}) do\n  $2\nend'
+  'subject!(:name) { }':
+    'prefix': 'subn!'
+    'body': 'subject!(:${1:name}) { $2 }'
+  'subject!(:name) do end':
+    'prefix': 'subnb!'
+    'body': 'subject!(:${1:name}) do\n  $2\nend'
+  # One-liner syntax
+  'it { is_expected.to }':
+    'prefix': 'iiet'
+    'body': 'it { is_expected.to ${1:expectation} }'
+  'it { is_expected.not_to }':
+    'prefix': 'iient'
+    'body': 'it { is_expected.not_to ${1:expectation} }'
+  'it { should }':
+    'prefix': 'ish'
+    'body': 'it { should ${1:expectation} }'
+  'it { should_not }':
+    'prefix': 'ishn'
+    'body': 'it { should_not ${1:expectation} }'
+  # Helper methods
+  'let(:name) { }':
+    'prefix': 'let'
+    'body': 'let(:${1:name}) { $2 }'
+  'let(:name) do end':
+    'prefix': 'letb'
+    'body': 'let(:${1:name}) do\n  $2\nend'
+  'let!(:name) { }':
+    'prefix': 'let!'
+    'body': 'let!(:${1:name}) { $2 }'
+  'let!(:name) do end':
+    'prefix': 'letb!'
+    'body': 'let!(:${1:name}) do\n  $2\nend'
+  # Metadata
+  'described_class':
+    'prefix': 'dc'
+    'body': 'described_class'
