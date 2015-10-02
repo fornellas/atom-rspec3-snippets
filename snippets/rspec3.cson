@@ -186,7 +186,7 @@
 
   'allow().to receive()':
     'prefix': 'atr'
-    'body': 'alow($1).to receive($2)'
+    'body': 'allow($1).to receive($2)'
   'allow().to receive_messages()':
     'prefix': 'atrm'
-    'body': 'alow($1).to receive_messages($2)'
+    'body': 'allow($1).to receive_messages($2)'
