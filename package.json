@@ -2,7 +2,7 @@
   "name": "rspec3-snippets",
   "main": "./lib/rspec3-snippets",
   "version": "0.3.0",
-  "description": "RSpec 3 snippets.",
+  "description": "Complete RSpec Core, RSpec Expectations and RSpec Mocks snippets.",
   "keywords": [],
   "repository": "https://github.com/fornellas/atom-rspec3-snippets",
   "license": "GPL",
