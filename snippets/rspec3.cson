@@ -179,3 +179,14 @@
   'expect do end.not_to':
     'prefix': 'exnb'
     'body': 'expect do\n  ${1:subject}\nend.not_to ${2}'
+
+  ##
+  ## RSpec Mocks
+  ##
+
+  'allow().to receive()':
+    'prefix': 'atr'
+    'body': 'alow($1).to receive($2)'
+  'allow().to receive_messages()':
+    'prefix': 'atrm'
+    'body': 'alow($1).to receive_messages($2)'
