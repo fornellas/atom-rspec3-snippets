@@ -4,75 +4,85 @@
   ##
 
   # example_group
-  'RSpec.example_group Type':
+  'example_group Type':
     'prefix': 'eg'
-    'body': '${1:RSpec.}example_group $2 do\n  $3\nend'
-  'RSpec.example_group \'string\'':
+    'body': 'example_group $1 do\n  $2\nend'
+  'example_group \'string\'':
     'prefix': 'egs'
-    'body': '${1:RSpec.}example_group \'$2\' do\n  $3\nend'
-  'RSpec.example_group Type, \'string\'':
+    'body': 'example_group \'$1\' do\n  $2\nend'
+  'example_group Type, \'string\'':
     'prefix': 'egts'
-    'body': '${1:RSpec.}example_group $2, \'$3\' do\n  $4\nend'
-  # describe
+    'body': 'example_group $1, \'$2\' do\n  $3\nend'
+  # RSpec.describe
   'RSpec.describe Type':
-    'prefix': 'desc'
+    'prefix': 'rdesc'
     'body': '${1:RSpec.}describe $2 do\n  $3\nend'
   'RSpec.describe \'string\'':
-    'prefix': 'descs'
+    'prefix': 'rdescs'
     'body': '${1:RSpec.}describe \'$2\' do\n  $3\nend'
   'RSpec.describe Type, \'string\'':
-    'prefix': 'descts'
+    'prefix': 'rdescts'
     'body': '${1:RSpec.}describe $2, \'$3\' do\n  $4\nend'
+  # describe
+  'describe Type':
+    'prefix': 'desc'
+    'body': 'describe $1 do\n  $2\nend'
+  'describe \'string\'':
+    'prefix': 'descs'
+    'body': 'describe \'$1\' do\n  $2\nend'
+  'describe Type, \'string\'':
+    'prefix': 'descts'
+    'body': 'describe $1, \'$2\' do\n  $3\nend'
   # context
-  'RSpec.context Type':
+  'context Type':
     'prefix': 'con'
-    'body': '${1:RSpec.}context $2 do\n  $3\nend'
-  'RSpec.context \'string\'':
+    'body': 'context $1 do\n  $2\nend'
+  'context \'string\'':
     'prefix': 'conts'
-    'body': '${1:RSpec.}context \'$2\' do\n  $3\nend'
-  'RSpec.context Type, \'string\'':
+    'body': 'context \'$1\' do\n  $2\nend'
+  'context Type, \'string\'':
     'prefix': 'contts'
-    'body': '${1:RSpec.}context $2, \'$3\' do\n  $4\nend'
+    'body': 'context $1, \'$2\' do\n  $3\nend'
   # xdescribe
-  'RSpec.xdescribe Type':
+  'xdescribe Type':
     'prefix': 'xdes'
-    'body': '${1:RSpec.}xdescribe $2 do\n  $3\nend'
-  'RSpec.xdescribe \'string\'':
+    'body': 'xdescribe $1 do\n  $2\nend'
+  'xdescribe \'string\'':
     'prefix': 'xdess'
-    'body': '${1:RSpec.}xdescribe \'$2\' do\n  $3\nend'
-  'RSpec.xdescribe Type, \'string\'':
+    'body': 'xdescribe \'$1\' do\n  $2\nend'
+  'xdescribe Type, \'string\'':
     'prefix': 'xdests'
-    'body': '${1:RSpec.}xdescribe $2, \'$3\' do\n  $4\nend'
+    'body': 'xdescribe $1, \'$2\' do\n  $3\nend'
   # xcontext
-  'RSpec.xcontext Type':
+  'xcontext Type':
     'prefix': 'xcon'
-    'body': '${1:RSpec.}xcontext $2 do\n  $3\nend'
-  'RSpec.xcontext \'string\'':
+    'body': 'xcontext $1 do\n  $2\nend'
+  'xcontext \'string\'':
     'prefix': 'xcons'
-    'body': '${1:RSpec.}xcontext \'$2\' do\n  $3\nend'
-  'RSpec.xcontext Type, \'string\'':
+    'body': 'xcontext \'$1\' do\n  $2\nend'
+  'xcontext Type, \'string\'':
     'prefix': 'xconts'
-    'body': '${1:RSpec.}xcontext $2, \'$3\' do\n  $4\nend'
+    'body': 'xcontext $1, \'$2\' do\n  $3\nend'
   # fdescribe
-  'RSpec.fdescribe Type':
+  'fdescribe Type':
     'prefix': 'fdes'
-    'body': '${1:RSpec.}fdescribe $2 do\n  $3\nend'
-  'RSpec.fdescribe \'string\'':
+    'body': 'fdescribe $1 do\n  $2\nend'
+  'fdescribe \'string\'':
     'prefix': 'fdess'
-    'body': '${1:RSpec.}fdescribe \'$2\' do\n  $3\nend'
-  'RSpec.fdescribe Type, \'string\'':
+    'body': 'fdescribe \'$1\' do\n  $2\nend'
+  'fdescribe Type, \'string\'':
     'prefix': 'fdests'
-    'body': '${1:RSpec.}fdescribe $2, \'$3\' do\n  $4\nend'
+    'body': 'fdescribe $1, \'$2\' do\n  $3\nend'
   # fcontext
-  'RSpec.fcontext Type':
+  'fcontext Type':
     'prefix': 'fcon'
-    'body': '${1:RSpec.}fcontext $2 do\n  $3\nend'
-  'RSpec.fcontext \'string\'':
+    'body': 'fcontext $1 do\n  $2\nend'
+  'fcontext \'string\'':
     'prefix': 'fcons'
-    'body': '${1:RSpec.}fcontext \'$2\' do\n  $3\nend'
-  'RSpec.fcontext Type, \'string\'':
+    'body': 'fcontext \'$1\' do\n  $2\nend'
+  'fcontext Type, \'string\'':
     'prefix': 'fconts'
-    'body': '${1:RSpec.}fcontext $2, \'$3\' do\n  $4\nend'
+    'body': 'fcontext $1, \'$2\' do\n  $3\nend'
   # it
   'it \'does something\'':
     'prefix': 'it'
@@ -93,7 +103,7 @@
   # Shared context
   'shared_context \'name\'':
     'prefix': 'sc'
-    'body': '${1:RSpec.}shared_context \'${2:name}\'${3:, key: value} do\n  $4\nend'
+    'body': 'shared_context \'${2:name}\'${3:, key: value} do\n  $4\nend'
   'include_context \'name\'':
     'prefix': 'incc'
     'body': 'include_context \'$1\'${2: do\n  ${3:# extend context}\nend}'
