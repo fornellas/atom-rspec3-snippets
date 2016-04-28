@@ -88,6 +88,30 @@
     'prefix': 'it'
     'body': 'it \'${1:does something}\'${2: do\n  $3\nend}'
   # Shared examples
+  'shared_examples \'name\' do ; end':
+    'prefix': 'se'
+    'body': 'shared_examples \'${1:name}\' do\n  $2\nend'
+  'shared_examples \'name\', key: \'value\' do ; end':
+    'prefix': 'sem'
+    'body': 'shared_examples \'${1:name}\', ${2:key: \'value\'} do\n  $3\nend'
+  'shared_examples \'name\' do |parameters| ; end':
+    'prefix': 'sep'
+    'body': 'shared_examples \'${1:name}\' do |${2:parameters}|\n  $3\nend'
+  'shared_examples \'name\', key: \'value\' do |parameters| ; end':
+    'prefix': 'semp'
+    'body': 'shared_examples \'${1:name}\', ${2:key: \'value\'} do |${3:parameters}|\n  $4\nend'
+  'RSpec.shared_examples \'name\' do ; end':
+    'prefix': 'rse'
+    'body': 'RSpec.shared_examples \'${1:name}\' do\n  $2\nend'
+  'RSpec.shared_examples \'name\', key: \'value\' do ; end':
+    'prefix': 'rsem'
+    'body': 'RSpec.shared_examples \'${1:name}\', ${2:key: \'value\'} do\n  $3\nend'
+  'RSpec.shared_examples \'name\' do |parameters| ; end':
+    'prefix': 'rsep'
+    'body': 'RSpec.shared_examples \'${1:name}\' do |${2:parameters}|\n  $3\nend'
+  'RSpec.shared_examples \'name\', key: \'value\' do |parameters| ; end':
+    'prefix': 'rsemp'
+    'body': 'shared_examples \'${1:name}\', ${2:key: \'value\'} do |${3:parameters}|\n  $4\nend'  
   'include_examples \'name\' # current context':
     'prefix': 'ince'
     'body': 'include_examples \'$1\'${2:, ${3:parameters}}'
@@ -98,7 +122,7 @@
     'prefix': 'isbl'
     'body': 'it_should_behave_like \'$1\'${2:, ${3:parameters}}'
   'matching :metadata # current context':
-    'prefix': 'mame'
+    'prefix': 'mmd'
     'body': 'matching :$1'
   # Shared context
   'shared_context \'name\'':
