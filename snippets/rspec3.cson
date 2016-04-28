@@ -111,7 +111,7 @@
     'body': 'RSpec.shared_examples \'${1:name}\' do |${2:parameters}|\n  $3\nend'
   'RSpec.shared_examples \'name\', key: \'value\' do |parameters| ; end':
     'prefix': 'rsemp'
-    'body': 'shared_examples \'${1:name}\', ${2:key: \'value\'} do |${3:parameters}|\n  $4\nend'  
+    'body': 'shared_examples \'${1:name}\', ${2:key: \'value\'} do |${3:parameters}|\n  $4\nend'
   'include_examples \'name\' # current context':
     'prefix': 'ince'
     'body': 'include_examples \'$1\'${2:, ${3:parameters}}'
@@ -135,12 +135,39 @@
   'before(:suite|:context|:example)':
     'prefix': 'bef'
     'body': 'before(:${1:suite|context|example}) do\n  $2\nend'
+  'before(:suite)':
+    'prefix': 'befs'
+    'body': 'before(:suite) do\n  $1\nend'
+  'before(:context)':
+    'prefix': 'befc'
+    'body': 'before(:context) do\n  $1\nend'
+  'before(:example)':
+    'prefix': 'befe'
+    'body': 'before(:example) do\n  $1\nend'
   'after(:example|:context|:suite)':
     'prefix': 'aft'
     'body': 'after(:${1:example|context|suite}) do\n  $2\nend'
+  'after(:suite)':
+    'prefix': 'afts'
+    'body': 'after(:suite) do\n  $1\nend'
+  'after(:context)':
+    'prefix': 'aftc'
+    'body': 'after(:context) do\n  $1\nend'
+  'after(:example)':
+    'prefix': 'afte'
+    'body': 'after(:example) do\n  $1\nend'
   'around(:example)':
     'prefix': 'aro'
     'body': 'around(:${1:example}) do |${2:example}|\n  $3\nend'
+  'around(:suite)':
+    'prefix': 'aros'
+    'body': 'around(:suite) do\n  $1\nend'
+  'around(:context)':
+    'prefix': 'aroc'
+    'body': 'around(:context) do\n  $1\nend'
+  'around(:example)':
+    'prefix': 'aroe'
+    'body': 'around(:example) do\n  $1\nend'
   # Subject
   'subject { }':
     'prefix': 'sub'
