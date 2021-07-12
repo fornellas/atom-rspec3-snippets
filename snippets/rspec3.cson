@@ -156,7 +156,7 @@
   'after(:example)':
     'prefix': 'afte'
     'body': 'after(:example) do\n  $1\nend'
-  'around(:example)':
+  'around(:example) |example|':
     'prefix': 'aro'
     'body': 'around(:${1:example}) do |${2:example}|\n  $3\nend'
   'around(:suite)':
